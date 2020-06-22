@@ -13,9 +13,9 @@
 /*---------------------------*/
 
 body {
-	font-size:12px; line-height:1.2em; font-family:Verdana, Arial, sans-serif;
+	font-size:12px; line-height:1.2em; font-family:'Noto Serif KR', sans-serif;
 	margin:0; padding:0;
-	background:#cccccc;
+	background:#222;
 	color:#afafaf;
 }
 
@@ -34,7 +34,7 @@ div.clear { clear:both; overflow:hidden; height:0; }
 /*---------------------------*/
 
 /* links */
-a 		{ text-decoration:underline; color:#bdf; }
+a 		{ text-decoration:none; color:#bdf; }
 a:hover { text-decoration:underline; }
 
 /* images */
