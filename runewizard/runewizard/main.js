@@ -493,7 +493,7 @@ var App =
 		sortables.ts_resortTable(lnk, 8);
 
 		if (numComplete) {
-			this.setRunewordCount(' ('+numComplete+' available)');
+			this.setRunewordCount(' ('+numComplete+' 제작 가능)');
 		}
 		else {
 			this.setRunewordCount('');
