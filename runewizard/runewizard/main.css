@@ -12,10 +12,10 @@
 /* Base rules & reset */
 /*---------------------------*/
 
-body { 
-	font-size:12px; line-height:1.2em; font-family:Verdana, Arial, sans-serif; 
-	margin:0; padding:0; 
-	background:#222;
+body {
+	font-size:12px; line-height:1.2em; font-family:Verdana, Arial, sans-serif;
+	margin:0; padding:0;
+	background:#cccccc;
 	color:#afafaf;
 }
 
@@ -138,7 +138,7 @@ h2 { font-size:15px; font-family:Georgia; color:#cfc; font-weight:normal; margin
 .runewords td.rune { width:40px; text-align:center; color:#ccc; }
 .runewords td.type { font-size:10px; }
 .runewords td.type span.small { font-size:10px; display:block; }
- 
+
 .runewords td.y { color:#4a4; }
 .runewords td.n { color:#844; }
 
@@ -148,7 +148,7 @@ h2 { font-size:15px; font-family:Georgia; color:#cfc; font-weight:normal; margin
 .runewords .complete th a { color:#928a70; }
 .runewords .complete td.type { color:#fff; }
  /* incomplete runeword styles */
-.runewords .incomplete th a { color:#575242; } 
+.runewords .incomplete th a { color:#575242; }
 .runewords .incomplete td.type { color:#888; }
 
 
@@ -162,7 +162,7 @@ h2 { font-size:15px; font-family:Georgia; color:#cfc; font-weight:normal; margin
 	background:#000;
 	border:1px solid #937c6e;
 	padding:12px 0 14px;
-	text-align:center; 
+	text-align:center;
 	color:#48ac3f;
 	font:12px/1.2em Arial, sans-serif;
 }
