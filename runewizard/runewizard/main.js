@@ -29,7 +29,7 @@ var Runewords = [
   {title:"Honor<br>명예</br>",runes:['Amn','El','Ith','Tir','Sol'],ttype:"근접 무기"},
   {title:"King's Grace<br>왕의 자비</br>",runes:['Amn','Ral','Thul'],ttype:"검/셉터"},
   {title:"Leaf<br>꽃잎</br>",runes:['Tir','Ral'],ttype:"스태프<span class=\"small\">(오브/완드 불가)<span>"},
-  {title:"Lionheart<br>라이온하트</br>",runes:['Hel','Lum','Fal'],ttype:"갑옷"},
+  {title:"Lionheart<br>용맹한자</br>",runes:['Hel','Lum','Fal'],ttype:"갑옷"},
   {title:"Lore<br>학식</br>",runes:['Ort','Sol'],ttype:"투구"},
   {title:"Malice<br>악의</br>",runes:['Ith','El','Eth'],ttype:"근접 무기"},
   {title:"Melody<br>멜로디</br>",runes:['Shael','Ko','Nef'],ttype:"원거리 무기"},
