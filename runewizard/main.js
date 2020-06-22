@@ -34,7 +34,7 @@ var Runewords = [
   {title:"Malice<br>악의</br>",runes:['Ith','El','Eth'],ttype:"근접 무기"},
   {title:"Melody<br>멜로디</br>",runes:['Shael','Ko','Nef'],ttype:"원거리 무기"},
   {title:"Memory<br>기억</br>",runes:['Lum','Io','Sol','Eth'],ttype:"스태프<span class=\"small\">(오브 불가)<span>"},
-  {title:"Nadir",runes:['Nef','Tir'],ttype:"투구"},
+  {title:"Nadir<br>천저</br>",runes:['Nef','Tir'],ttype:"투구"},
   {title:"Radiance<br>찬란한 빛</br>",runes:['Nef','Sol','Ith'],ttype:"투구"},
   {title:"Rhyme<br>라임</br>",runes:['Shael','Eth'],ttype:"방패"},
   {title:"Silence<br>침묵</br>",runes:['Dol','Eld','Hel','Ist','Tir','Vex'],ttype:"무기"},
@@ -44,7 +44,7 @@ var Runewords = [
   {title:"Strength<br>스트랭쓰</br>",runes:['Amn','Tir'],ttype:"근접 무기"},
   {title:"Venom<br>베넘</br>",runes:['Tal','Dol','Mal'],ttype:"무기"},
   {title:"Wealth<br>웰쓰</br>",runes:['Lem','Ko','Tir'],ttype:"갑옷"},
-  {title:"White",runes:['Dol','Io'],ttype:"완드"},
+  {title:"White<br>화이트</br>",runes:['Dol','Io'],ttype:"완드"},
   {title:"Zephyr<br>제퍼</br>",runes:['Ort','Eth'],ttype:"원거리 무기"},
 	/* 1.10 */
   {title:"Beast<br>야수</br>",runes:['Ber','Tir','Um','Mal','Lum'],ttype:"도끼/셉터/해머"},
