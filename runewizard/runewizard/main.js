@@ -87,7 +87,7 @@ var Runewords = [
   {title:"Insight<br>통찰력</br>",runes:['Ral','Tir','Tal','Sol'],ttype:"폴암/스태프",ladder:true},
   {title:"Last Wish<br>마지막 소원</br>",runes:['Jah','Mal','Jah','Sur','Jah','Ber'],ttype:"검/해머/도끼",ladder:true},
   {title:"Lawbringer<br>법률집행인</br>",runes:['Amn','Lem','Ko'],ttype:"검/해머/셉터",ladder:true},
-  {title:"Oath",runes:['Shael','Pul','Mal','Lum'],ttype:"검/도끼/메이스",ladder:true},
+  {title:"Oath<br>서약</br>",runes:['Shael','Pul','Mal','Lum'],ttype:"검/도끼/메이스",ladder:true},
   {title:"Obedience<br>순종</br>",runes:['Hel','Ko','Thul','Eth','Fal'],ttype:"폴암",ladder:true},
   {title:"Phoenix<br>불사조</br>",runes:['Vex','Vex','Lo','Jah'],ttype:"무기/방패",ladder:true},
   {title:"Pride<br>자존심</br>",runes:['Cham','Sur','Io','Lo'],ttype:"폴암",ladder:true},
