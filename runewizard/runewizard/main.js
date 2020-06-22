@@ -24,12 +24,12 @@ var Runewords = [
 	/* 1.09 */
   {title:"Ancient's Pledge<br>고대인의 서약</br>",runes:['Ral','Ort','Tal'],ttype:"방패"},
   {title:"Black<br>블랙</br>",runes:['Thul','Io','Nef'],ttype:"클럽/해머/메이스"},
-  {title:"Fury<br>원한</br>",runes:['Jah','Gul','Eth'],ttype:"근접 무기"},
+  {title:"Fury<br>격노</br>",runes:['Jah','Gul','Eth'],ttype:"근접 무기"},
   {title:"Holy Thunder<br>홀리 썬더</br>",runes:['Eth','Ral','Ort','Tal'],ttype:"셉터"},
   {title:"Honor<br>명예</br>",runes:['Amn','El','Ith','Tir','Sol'],ttype:"근접 무기"},
   {title:"King's Grace<br>왕의 자비</br>",runes:['Amn','Ral','Thul'],ttype:"검/셉터"},
   {title:"Leaf<br>꽃잎</br>",runes:['Tir','Ral'],ttype:"스태프<span class=\"small\">(오브/완드 불가)<span>"},
-  {title:"Lionheart<br>용맹한자</br>",runes:['Hel','Lum','Fal'],ttype:"갑옷"},
+  {title:"Lionheart<br>용맹한 자</br>",runes:['Hel','Lum','Fal'],ttype:"갑옷"},
   {title:"Lore<br>학식</br>",runes:['Ort','Sol'],ttype:"투구"},
   {title:"Malice<br>악의</br>",runes:['Ith','El','Eth'],ttype:"근접 무기"},
   {title:"Melody<br>멜로디</br>",runes:['Shael','Ko','Nef'],ttype:"원거리 무기"},
@@ -96,7 +96,7 @@ var Runewords = [
   {title:"Voice of Reason<br>이성적인 항변</br>",runes:['Lem','Ko','El','Eld'],ttype:"검/메이스",ladder:true},
   {title:"Wrath<br>래쓰</br>",runes:['Pul','Lum','Ber','Mal'],ttype:"원거리 무기",ladder:true},
 	/* POD LADDER */
-  {title:"Pattern<br>은어</br>",runes:['Tal','Ort','Tir'],ttype:"클러",ladder:true},
+  {title:"Pattern<br>패턴</br>",runes:['Tal','Ort','Tir'],ttype:"클러",ladder:true},
   {title:"Plague<br>역병</br>",runes:['Cham','Fal','Um'],ttype:"무기",ladder:true},
     /* 1.11 */
     {title:"Bone<br>본</br>",runes:['Sol','Um','Um'],ttype:"갑옷<span class=\"small\">(네크로맨서)</span>",tclass:"Necromancer"},
