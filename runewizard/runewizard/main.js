@@ -25,7 +25,7 @@ var Runewords = [
   {title:"Ancient's Pledge<br>고대인의 서약</br>",runes:['Ral','Ort','Tal'],ttype:"방패"},
   {title:"Black<br>블랙</br>",runes:['Thul','Io','Nef'],ttype:"클럽/해머/메이스"},
   {title:"Fury<br>격노</br>",runes:['Jah','Gul','Eth'],ttype:"근접 무기"},
-  {title:"Holy Thunder<br>홀리 썬더</br>",runes:['Eth','Ral','Ort','Tal'],ttype:"셉터"},
+  {title:"Holy Thunder<br>신성한 번개</br>",runes:['Eth','Ral','Ort','Tal'],ttype:"셉터"},
   {title:"Honor<br>명예</br>",runes:['Amn','El','Ith','Tir','Sol'],ttype:"근접 무기"},
   {title:"King's Grace<br>왕의 자비</br>",runes:['Amn','Ral','Thul'],ttype:"검/셉터"},
   {title:"Leaf<br>꽃잎</br>",runes:['Tir','Ral'],ttype:"스태프<span class=\"small\">(오브/완드 불가)<span>"},
