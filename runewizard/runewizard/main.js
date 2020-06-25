@@ -43,7 +43,7 @@ var Runewords = [
   {title:"Steel<br>스틸</br>",runes:['Tir','El'],ttype:"검/도끼/메이스"},
   {title:"Strength<br>스트랭쓰</br>",runes:['Amn','Tir'],ttype:"근접 무기"},
   {title:"Venom<br>베넘</br>",runes:['Tal','Dol','Mal'],ttype:"무기"},
-  {title:"Wealth<br>웰쓰</br>",runes:['Lem','Ko','Tir'],ttype:"갑옷"},
+  {title:"Wealth<br>부유함</br>",runes:['Lem','Ko','Tir'],ttype:"갑옷"},
   {title:"White<br>화이트</br>",runes:['Dol','Io'],ttype:"완드"},
   {title:"Zephyr<br>제퍼</br>",runes:['Ort','Eth'],ttype:"원거리 무기"},
 	/* 1.10 */
@@ -64,7 +64,7 @@ var Runewords = [
   {title:"Gloom<br>우울</br>",runes:['Fal','Um','Pul'],ttype:"갑옷"},
   {title:"Hand of Justice<br>정의의 손길</br>",runes:['Sur','Cham','Amn','Lo'],ttype:"무기"},
   {title:"Heart of the Oak<br>오크의 심장</br>",runes:['Ko','Vex','Pul','Thul'],ttype:"스태프*/메이스"},
-  {title:"Kingslayer<br>킹슬레이어</br>",runes:['Mal','Um','Gul','Fal'],ttype:"검/도끼"},
+  {title:"Kingslayer<br>왕시해자</br>",runes:['Mal','Um','Gul','Fal'],ttype:"검/도끼"},
   {title:"Passion<br>열정</br>",runes:['Dol','Ort','Eld','Lem'],ttype:"무기"},
   {title:"Prudence<br>현명</br>",runes:['Mal','Tir'],ttype:"갑옷"},
   {title:"Sanctuary<br>성역</br>",runes:['Ko','Ko','Mal'],ttype:"방패"},
