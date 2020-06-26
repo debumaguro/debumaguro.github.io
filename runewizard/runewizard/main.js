@@ -68,7 +68,7 @@ var Runewords = [
   {title:"Passion<br>열정</br>",runes:['Dol','Ort','Eld','Lem'],ttype:"무기"},
   {title:"Prudence<br>현명</br>",runes:['Mal','Tir'],ttype:"갑옷"},
   {title:"Sanctuary<br>성역</br>",runes:['Ko','Ko','Mal'],ttype:"방패"},
-  {title:"Splendor<br>스플렌더</br>",runes:['Eth','Lum'],ttype:"방패"},
+  {title:"Splendor<br>광휘</br>",runes:['Eth','Lum'],ttype:"방패"},
   {title:"Stone<br>바위</br>",runes:['Shael','Um','Pul','Lum'],ttype:"갑옷"},
   {title:"Wind<br>바람</br>",runes:['Sur','El'],ttype:"근접 무기"},
 	/* 1.10 LADDER */
