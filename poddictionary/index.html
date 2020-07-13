@@ -323,9 +323,9 @@
 						},
 						{
 							word: "SC",
-							def: "소프트코어",
+							def: "1. Softcore<br>소프트코어<br>2. Small Charm<br>[아이템] 스몰 참",
 							example: "",
-							rel: ["HC"] 
+							rel: ["HC", "GC"] 
 						},
 						{
 							word: "HC",
@@ -401,7 +401,7 @@
 						},
 						{
 							word: "CB",
-							def: "Crushing Blow<br>강타",
+							def: "1. Crushing Blow<br>강타<br>2. Colossus Blade<br>[아이템] 콜로서스 블레이드",
 							example: "",
 							rel: ["DS"] 
 						},
@@ -487,7 +487,7 @@
 							word: "OS",
 							def: "Open Socket<br>(빈) 소켓",
 							example: "N 4os ss<br>4솟 폭풍막이 구함",
-							rel: [] 
+							rel: ["S", "soc"] 
 						},
 						{
 							word: "RW",
@@ -527,7 +527,7 @@
 						},
 						{
 							word: "WP",
-							def: "Waypoint<br>웨이포인트",
+							def: "1. Waypoint<br>웨이포인트<br>2. War Pike<br>[아이템] 워 파이크",
 							example: "",
 							rel: ["TP"] 
 						},
@@ -539,7 +539,7 @@
 						},
 						{
 							word: "CS",
-							def: "Chaos Sanctuary<br>카생",
+							def: "1. Chaos Sanctuary<br>카생<br>2. Colossus Sword<br>콜로서스 소드",
 							example: "CS Run<br>카생런",
 							rel: [] 
 						},
@@ -602,12 +602,6 @@
 							def: "[아이템] Grand Charm<br>그랜드 참",
 							example: "I need 2 more fire gcs<br>파이어 스킬참 2개 더 필요하다",
 							rel: ["SC"] 
-						},
-						{
-							word: "SC",
-							def: "[아이템] Small Charm<br>스몰 참",
-							example: "",
-							rel: ["GC"] 
 						},
 						{
 							word: "skiller",
@@ -751,7 +745,7 @@
 							word: "SoE",
 							def: "String of Ears<br>[아이템] 귀꿰미",
 							example: "",
-							rel: [] 
+							rel: ["string"] 
 						},
 						{
 							word: "TGod",
@@ -760,22 +754,22 @@
 							rel: [] 
 						},
 						{
-							word: "Occu",
+							word: "occu",
 							def: "The Oculus<br>[아이템] 망울",
 							example: "",
-							rel: ["Occy"] 
+							rel: ["occy"] 
 						},
 						{
-							word: "Occy",
+							word: "occy",
 							def: "The Oculus<br>[아이템] 망울",
 							example: "",
-							rel: ["Occu"] 
+							rel: ["occu"] 
 						},
 						{
 							word: "DW",
-							def: "Death's Web<br>[아이템] 죽음의 거미줄",
+							def: "1. Death's Web<br>[아이템] 죽음의 거미줄<br>2. Dual Wield<br>쌍수",
 							example: "",
-							rel: [] 
+							rel: ["DWeb"] 
 						},
 						{
 							word: "HoZ",
@@ -865,13 +859,13 @@
 							word: "WTB",
 							def: "Wanted to Buy<br>삽니다",
 							example: "WTB clean SoJ<br>조던 클린 삽니다",
-							rel: ["N", "LF"] 
+							rel: ["N", "LF", "ISO"] 
 						},
 						{
 							word: "LF",
 							def: "Looking For<br>찾습니다",
 							example: "LF clean SoJ<br>조던 클린 찾습니다",
-							rel: ["N", "WTB"] 
+							rel: ["N", "WTB", "ISO"] 
 						},
 						{
 							word: "N",
@@ -885,6 +879,260 @@
 							example: "N clean SoJ O 2.5hrs<br>클린 조던 2.5hr에 삽니다",
 							rel: ["O", "N _ O _"] 
 						},
+						{
+							word: "GBane",
+							def: "Gladiator's Bane<br>[아이템] 검투사의 골칫거리",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "Nat's",
+							def: "Natalya's<br>[아이템] 나탈랴 세트",
+							example: "Nat's Claw<br>나탈 클러",
+							rel: [] 
+						},
+						{
+							word: "MH",
+							def: "Main Hand<br>주무기",
+							example: "",
+							rel: ["OH"] 
+						},
+						{
+							word: "OH",
+							def: "Off Hand<br>보조 무기",
+							example: "",
+							rel: ["MH"] 
+						},
+						{
+							word: "IK",
+							def: "Immortal King's<br>[아이템] 불멸왕 세트",
+							example: "IK Armor<br>임모갑",
+							rel: [] 
+						},
+						{
+							word: "S",
+							def: "Socket<br>소켓",
+							example: "4s gbane<br>4솟 글래디",
+							rel: ["OS", "soc"] 
+						},
+						{
+							word: "soc",
+							def: "Socket<br>소켓",
+							example: "4soc gbane<br>4솟 글래디",
+							rel: ["OS", "S"] 
+						},
+						{
+							word: "facet",
+							def: "Rainbow Facet<br>[아이템] 무지갯빛 보석",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "BA",
+							def: "Berserker Axe<br>[아이템] 버서커 액스",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "PB",
+							def: "Phase Blade<br>[아이템] 페이즈 블레이드",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "sorc",
+							def: "Sorceress<br>소서리스",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "barb",
+							def: "Barbarian<br>바바리안",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "necro",
+							def: "Necromancer<br>네크로맨서",
+							example: "",
+							rel: ["nec"] 
+						},
+						{
+							word: "nec",
+							def: "Necromancer<br>네크로맨서",
+							example: "",
+							rel: ["necro"] 
+						},
+						{
+							word: "ama",
+							def: "Amazon<br>아마존",
+							example: "",
+							rel: ["zon"] 
+						},
+						{
+							word: "zon",
+							def: "Amazon<br>아마존",
+							example: "",
+							rel: ["ama"] 
+						},
+						{
+							word: "pal",
+							def: "Paladin<br>팔라딘",
+							example: "",
+							rel: ["pala", "pally"] 
+						},
+						{
+							word: "pala",
+							def: "Paladin<br>팔라딘",
+							example: "",
+							rel: ["pal", "pally"] 
+						},
+						{
+							word: "pally",
+							def: "Paladin<br>팔라딘",
+							example: "",
+							rel: ["pal", "pala"] 
+						},
+						{
+							word: "dru",
+							def: "Druid<br>드루이드",
+							example: "",
+							rel: ["dudu"] 
+						},
+						{
+							word: "dudu",
+							def: "Druid<br>드루이드",
+							example: "",
+							rel: ["dru"] 
+						},
+						{
+							word: "sin",
+							def: "Assassin<br>어쌔신",
+							example: "",
+							rel: ["assa"] 
+						},
+						{
+							word: "assa",
+							def: "Assassin<br>어쌔신",
+							example: "",
+							rel: ["sin"] 
+						},
+						{
+							word: "bowazon",
+							def: "보우 아마존",
+							example: "",
+							rel: ["bowa"] 
+						},
+						{
+							word: "bowa",
+							def: "bowazon 참고",
+							example: "",
+							rel: ["bowazon"] 
+						},
+						{
+							word: "javazon",
+							def: "자벨린 아마존",
+							example: "",
+							rel: ["java"] 
+						},
+						{
+							word: "java",
+							def: "javazon 참고",
+							example: "",
+							rel: ["javaazon"] 
+						},
+						{
+							word: "HLord",
+							def: "Highlord's Wrath<br>[아이템] 고위사제의 진노",
+							example: "",
+							rel: ["Highlords"] 
+						},
+						{
+							word: "hype",
+							def: "(득템 등으로) 기분이 좋다",
+							example: "Jah Hype<br>자룬 득템 ㅅㅅ",
+							rel: [] 
+						},
+						{
+							word: "DMG",
+							def: "Damage<br>데미지",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "ISO",
+							def: "In Search Of<br>찾습니다",
+							example: "iso some T2s<br>T2맵 구합니다",
+							rel: ["LF", "WTB", "N"] 
+						},
+						{
+							word: "LLD",
+							def: "Low Level Duel<br>저레벨 PvP (보통 30레벨 이하)",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "shaft",
+							def: "Shaftstop<br>[아이템] 칼날막이 갑옷",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "LLD",
+							def: "Low Level Duel<br>저레벨 PvP (보통 30레벨 이하)",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "string",
+							def: "String of Ears<br>[아이템] 귀꿰미",
+							example: "",
+							rel: ["SoE"] 
+						},
+						{
+							word: "viper",
+							def: "Skin of Vipermagi<br>[아이템] 뱀 주술사의 가죽",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "RNG",
+							def: "Random Number Generation<br>난수 생성<br>게임에서의 운빨",
+							example: "pray to RNGesus<br>운빨의 신에게 기도해",
+							rel: [] 
+						},
+						{
+							word: "DWeb",
+							def: "Death's Web<br>[아이템] 죽음의 거미줄",
+							example: "",
+							rel: ["DW"] 
+						},
+						{
+							word: "SW",
+							def: "Shockwave<br>[스킬] 쇼크웨이브",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "meph",
+							def: "Mephisto<br>[보스] 메피스토",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "dclone",
+							def: "Diablo Clone<br>[보스] 클론 디아블로, 디클론",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "res",
+							def: "Resistance<br>저항",
+							example: "11% f res sc<br>11%파이어 저항 스몰참",
+							rel: [] 
+						},
+
+
 
 
 	];
@@ -965,11 +1213,11 @@
 		if (query == "") {
 			return;
 		}
-		lcquery = query.replace(/[^a-zA-Z0-9]/g,'').toLowerCase();
+		lcquery = query.replace(/[^a-zA-Z0-9@]/g,'').toLowerCase();
 		found = -1; //search found false result
 
 		for (var i = 0; i < dictionary.length; i++) {
-			if (lcquery == dictionary[i].word.replace(/[^a-zA-Z0-9]/g,'').toLowerCase()) {
+			if (lcquery == dictionary[i].word.replace(/[^a-zA-Z0-9@]/g,'').toLowerCase()) {
 				found = i;
 				break;
 			}
