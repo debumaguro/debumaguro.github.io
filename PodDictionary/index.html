@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>패스 오브 디아블로 사전</title>
+	<meta name="description" content="패스 오브 디아블로 약어/은어 사전">
+	<meta name="author" content="Debu">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="bodyIntro" style="display: block;">
+	<h1>Path of Diablo English-Korean Dictionary</h1>
+	PoD의 줄임말과 슬랭을 검색할 수 있는 사전입니다
+	<br>
+	<i>사전 관련 건의, 오류, 기타 문의사항은 <a href="https://Pathofdebu.tistory.com">블로그</a>에 남겨주세요</i>
+	</div>
+	<div class="header">
+			<input type="text" id="search" placeholder="검색...">
+			<button onclick="search()">찾기</button>
+			<button id="ranButton" onclick="ranShow()">랜덤</button>
+	</div>
+
+	<div class="wrapper">
+		<div class="searchText">
+			<ul id="word_list"></ul>
+		</div>
+
+		<div class="word">
+			<h2 id="word_text">word</h2>
+			<p id="definition">단어의 뜻</p>
+
+
+			<h4 id="exampleTitle">예문:</h4>
+			<p id="example"><i>예문</i></p>
+
+			<hr>
+
+			<h4 id="relatedTitle">관련 단어:</h4>
+			<ul id="related"></ul>
+		</div>
+	</div>
+
+<div class="clear"></div>
+<div id="footer">
+	<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Path of Diablo Dictionary</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Debu</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+</div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	var dictionary = [
+						{
+							word: "OoC",
+							def: "Orb of Corruption<br>[아이템] 타락의 오브<br>화폐 단위",
+							example: "",
+							rel: ["CNC", "slam", "clean", "brick"] 
+						},
+						{
+							word: "CNC",
+							def: "Corrupted No Change<br>타락했지만 옵션의 변화가 없음",
+							example: "",
+							rel: ["OoC", "clean", "brick"] 
+						},
+						{
+							word: "HR",
+							def: "High Rune<br>1. [아이템] 높은 번호의 고급 룬<br>2. 화폐 단위",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "clean",
+							def: "타락의 오브가 사용되지 않은 깨끗한 상태의 아이템",
+							example: "",
+							rel: ["CNC", "brick", "slam"] 
+						},
+						{
+							word: "brick",
+							def: "brick/bricked<br>타락에 실패해서 레어 아이템으로 변함",
+							example: "",
+							rel: ["clean", "CNC"] 
+						},
+						{
+							word: "SoJ",
+							def: "Stone of Jordan<br>[아이템] 요르단의 반지",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "T4T",
+							def: "Thanks for Trade<br>거래 감사합니다",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "OBO",
+							def: "Or Best Offer<br>또는 제일 높은 가격에 팜<br>정한 가격에서 흥정의사가 있으니 높은 제시가에 판단 뜻",
+							example: "8hrs obo<br>8hr 또는 괜찮은 가격에 팜",
+							rel: [] 
+						},
+						{
+							word: "BRB",
+							def: "Be Right Back<br>곧 다시옴",
+							example: "brb in 5 minutes<br>5분안에 올께",
+							rel: ["AFK"] 
+						},
+						{
+							word: "AFK",
+							def: "Away From Keyboard<br>잠수",
+							example: "Sorry, I was AFK.<br>미안, 잠수였어.",
+							rel: ["BRB"] 
+						},
+						{
+							word: "BiS",
+							def: "Best in Slot<br>(구상속의) 최종템, 졸업템",
+							example: "10fcr soj would be the BiS for this build<br>10패캐 조던이 이 빌드에서 졸업템일거야",
+							rel: ["GG"] 
+						},
+						{
+							word: "ATM",
+							def: "At the Moment<br>지금 시점에",
+							example: "facets are stupidly priced atm<br>레인보우 주얼 가격이 지금 터무니없어",
+							rel: [] 
+						},
+						{
+							word: "TY",
+							def: "Thank You<br>감사합니다",
+							example: "",
+							rel: ["TYVM", "T4T"] 
+						},
+						{
+							word: "TYVM",
+							def: "Thank You Very Much<br>감사합니다",
+							example: "",
+							rel: ["TY", "T4T"] 
+						},
+						{
+							word: "NP",
+							def: "No Problem<br>괜찮아",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "GL",
+							def: "Good Luck<br>굿럭",
+							example: "",
+							rel: ["HF"] 
+						},
+						{
+							word: "HF",
+							def: "Have Fun<br>즐겜",
+							example: "",
+							rel: ["GL"] 
+						},
+						{
+							word: "SS",
+							def: "1. Stay Safe<br>무장하세요<br>2. Stormshield<br>폭풍막이",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "GN",
+							def: "굿나잇",
+							example: "",
+							rel: ["Nite", "Gnite", "Night"] 
+						},
+						{
+							word: "Nite",
+							def: "굿나잇",
+							example: "",
+							rel: ["GN", "Gnite", "Night"] 
+						},
+						{
+							word: "Gnite",
+							def: "굿나잇",
+							example: "",
+							rel: ["GN", "Nite", "Night"] 
+						},
+						{
+							word: "Night",
+							def: "굿나잇",
+							example: "",
+							rel: ["GN", "Nite", "Gnite"] 
+						},
+						{
+							word: "GG",
+							def: "종결급 아이템",
+							example: "Just found gg ring today<br>방금 종결급 반지 구했다",
+							rel: [] 
+						},
+						{
+							word: "FT",
+							def: "For Trade<br>거래용 아이템",
+							example: "I've got 2 ptorch ft<br>팔라횃불 두개를 팔고 있다",
+							rel: [] 
+						},
+						{
+							word: "N _ O _",
+							def: "Need - 구하는 아이템<br>Offer - 지불할 아이템",
+							example: "N 3x3 O ohm<br>키세트 3x3을 옴룬으로 삽니다",
+							rel: ["_ 4 _", "_ for _"] 
+						},
+						{
+							word: "_ 4 _",
+							def: "A 4(for) B<br>A로 B를 산다",
+							example: "Ber+Sur 4 Jah<br>베르+수르로 자룬 구함",
+							rel: ["_ for _"] 
+						},
+						{
+							word: "_ for _",
+							def: "A 4(for) B<br>A로 B를 산다",
+							example: "Ber+Sur 4 Jah<br>베르+수르로 자룬 구함",
+							rel: ["_ 4 _"] 
+						},
+						{
+							word: "GtG",
+							def: "Gotta Go<br>가야 된다",
+							example: "gtg night lads<br>나 갈께, 굿나잇 친구들",
+							rel: ["G2G"] 
+						},
+						{
+							word: "G2G",
+							def: "Gotta Go<br>가야 된다",
+							example: "g2g night lads<br>나 갈께, 굿나잇 친구들",
+							rel: ["GtG"] 
+						},
+						{
+							word: "RN",
+							def: "Right Now<br>지금",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "IIRC",
+							def: "If I Remember Correctly<br>내 기억이 맞으면",
+							example: "dual dream is currently bugged iirc<br>내 기억이 맞으면 듀얼드림은 지금 버그야",
+							rel: [] 
+						},
+						{
+							word: "IDK",
+							def: "I Don't Know",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "IMO",
+							def: "In My Opinion<br>내 생각엔",
+							example: "nat's claw is better than fleshripper imo<br>내 생각엔 나탈 클러가 플레시리퍼보다 좋다",
+							rel: ["IMHO"] 
+						},
+						{
+							word: "IMHO",
+							def: "In My Humble Opinion<br>내 생각엔",
+							example: "nat's claw is better than fleshripper imho<br>내 생각엔 나탈 클러가 플레시리퍼보다 좋다",
+							rel: ["IMO"] 
+						},
+
+						{
+							word: "TBH",
+							def: "To Be Honest<br>솔직히",
+							example: "",
+							rel: ["TBF"] 
+						},
+						{
+							word: "TBF",
+							def: "To Be Fair<br>솔직히",
+							example: "",
+							rel: ["TBH"] 
+						},
+						{
+							word: "FYI",
+							def: "For Your Information<br>너를 위해 알려주자면",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "BTW",
+							def: "By the Way<br>그나저나",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "WDYM",
+							def: "What Do You Mean<br>무슨 말임?",
+							example: "wdym (by) player 8 drops<br>플레이어8 드랍이 무슨뜻임?",
+							rel: [] 
+						},
+						{
+							word: "C/O",
+							def: "Current Offer<br>현재 입찰가<br>상회하는 금액에 팔겠다는 뜻 내포",
+							example: "offer (c/o is 8hr)<br>제시 (현재 8hr 제시옴)",
+							rel: [] 
+						},
+						{
+							word: "LMK",
+							def: "Let Me Know<br>알려줘",
+							example: "lmk when you get back on<br>다시 접속하면 알려줘",
+							rel: [] 
+						},
+						{
+							word: "PC",
+							def: "Price Check<br>가격 체크(문의)",
+							example: "PC on fcr wisp<br>패캐 위스프링 시세좀 ",
+							rel: [] 
+						},
+						{
+							word: "NVM",
+							def: "Never Mind<br>신경쓰지 마",
+							example: "Should I slam it? nvm lol it's eth<br>커럽시킬까? 아니다 에테리얼이네ㅋㅋ",
+							rel: ["NM"] 
+						},
+						{
+							word: "NM",
+							def: "1. Never Mind<br>신경쓰지 마<br>2. 나이트메어",
+							example: "Anyone able to do a nm rush?<br>나메 버스좀 가능한분?",
+							rel: ["NVM", "Norm"] 
+						},
+						{
+							word: "Norm",
+							def: "노멀",
+							example: "",
+							rel: ["NM"] 
+						},
+						{
+							word: "SC",
+							def: "소프트코어",
+							example: "",
+							rel: ["HC"] 
+						},
+						{
+							word: "HC",
+							def: "하드코어",
+							example: "",
+							rel: ["SC"] 
+						},
+						{
+							word: "SSF",
+							def: "Solo Self Found<br>거래나 파티플레이 없이 완전 솔플로 육성하는 방식",
+							example: "HC SSF challenge<br>하코 자급자족 도전",
+							rel: ["GSF"] 
+						},
+						{
+							word: "GSF",
+							def: "Group Self Found<br>정해진 그룹으로 플레이하며 구성원들끼리 자급자족하는 플레이 방식",
+							example: "",
+							rel: ["SSF"] 
+						},
+						{
+							word: "BP",
+							def: "Breakpoint<br>(프레임 등) 임계수치에 따라 나뉘는 구획점",
+							example: "i need 20 more ias to hit 6 frame bp<br>6프레임 달성 수치까지 20공속 더 필요해",
+							rel: [] 
+						},
+						{
+							word: "ED",
+							def: "1. Enhanced Damage<br>증뎀<br>2. Enhanced Defense<br>방상",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "IAS",
+							def: "Increased Attack Speed<br>공속증가",
+							example: "15 ias jewel<br>15공속 주얼",
+							rel: [] 
+						},
+						{
+							word: "FCR",
+							def: "Faster Cast Rate<br>패캐",
+							example: "",
+							rel: ["FRW","FHR"] 
+						},
+						{
+							word: "PGem",
+							def: "퍼보석",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "FRW",
+							def: "Faster Run Walk<br>이속, 달려",
+							example: "",
+							rel: ["FCR","FHR"] 
+						},
+						{
+							word: "FHR",
+							def: "Faster Hit Recovery<br>패힛",
+							example: "",
+							rel: ["FCR","FRW"] 
+						},
+						{
+							word: "AR",
+							def: "Attack Rating<br>어레",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "DS",
+							def: "Deadly Strike<br>치타",
+							example: "",
+							rel: ["CB"] 
+						},
+						{
+							word: "CB",
+							def: "Crushing Blow<br>강타",
+							example: "",
+							rel: ["DS"] 
+						},
+						{
+							word: "CBF",
+							def: "Cannot be Frozen<br>빙결안됨",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "LL",
+							def: "Life Leech<br>라흡",
+							example: "",
+							rel: ["ML"] 
+						},
+						{
+							word: "ML",
+							def: "Mana Leech<br>마흡",
+							example: "",
+							rel: ["LL"] 
+						},
+						{
+							word: "LGoH",
+							def: "Life Gained on Hit<br>라이프온힛",
+							example: "",
+							rel: ["MGoH"] 
+						},
+						{
+							word: "MGoH",
+							def: "Mana Gained on Hit<br>마나온힛",
+							example: "",
+							rel: ["LGoH"] 
+						},
+						{
+							word: "slam",
+							def: "커럽시키다",
+							example: "",
+							rel: ["OoC", "CNC", "brick"] 
+						},
+						{
+							word: "DR",
+							def: "Damage Reduction<br>(주로 물리) 리듀",
+							example: "",
+							rel: ["PDR", "MDR"] 
+						},
+						{
+							word: "PDR",
+							def: "Physical Damage Reduction<br>물리 리듀",
+							example: "",
+							rel: ["DR", "MDR"] 
+						},
+						{
+							word: "MDR",
+							def: "Magic Damage Reduction<br>매직 리듀",
+							example: "",
+							rel: ["DR", "PDR"] 
+						},
+						{
+							word: "ITD",
+							def: "Ignore Target's Defense<br>방어무시",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "MF",
+							def: "Magic Find<br>매찬",
+							example: "500 MF CS Run<br>500매찬 카생런",
+							rel: [] 
+						},
+						{
+							word: "CDR",
+							def: "Cooldown Reduction<br>쿨감",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "MPK",
+							def: "Mana Per Kill<br>킬당 마나, 마상",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "OS",
+							def: "Open Socket<br>(빈) 소켓",
+							example: "N 4os ss<br>4솟 폭풍막이 구함",
+							rel: [] 
+						},
+						{
+							word: "RW",
+							def: "Runeword<br>룬워드",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "CtC",
+							def: "Chance to Cast<br>공격/타격시 일정 확률로 발동하는 스킬, 그런 스킬을 사용하는 빌드",
+							example: "lawbringer has decrep ctc<br>법률집행인에는 디크리피파이 타격시 시전이 달렸다",
+							rel: [] 
+						},
+						{
+							word: "FI",
+							def: "Fire Immune<br>파이어 내성",
+							example: "",
+							rel: ["PI", "LI", "CI"] 
+						},
+						{
+							word: "LI",
+							def: "Lightning Immune<br>라이트닝 내성",
+							example: "",
+							rel: ["FI", "PI", "CI"] 
+						},
+						{
+							word: "CI",
+							def: "Cold Immune<br>콜드 내성",
+							example: "",
+							rel: ["FI", "LI", "PI"] 
+						},
+						{
+							word: "PI",
+							def: "1. Physical Immune<br>물리 내성<br>2. Poison Immune<br>포이즌 내성",
+							example: "",
+							rel: ["FI", "LI", "CI"] 
+						},
+						{
+							word: "WP",
+							def: "Waypoint<br>웨이포인트",
+							example: "",
+							rel: ["TP"] 
+						},
+						{
+							word: "TP",
+							def: "타운포탈",
+							example: "TP pls<br>포탈좀요",
+							rel: ["WP"] 
+						},
+						{
+							word: "CS",
+							def: "Chaos Sanctuary<br>카생",
+							example: "CS Run<br>카생런",
+							rel: [] 
+						},
+						{
+							word: "FTJ",
+							def: "Failed to join the game<br>게임 참가 실패",
+							example: "",
+							rel: [] 
+						},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	];
+
+	//shuffles array cause I have OCD
+	function shuffleArray(array) {
+	    for (let i = array.length - 1; i > 0; i--) {
+	        const j = Math.floor(Math.random() * (i + 1));
+	        [array[i], array[j]] = [array[j], array[i]];
+	    }
+	}
+
+	//fill the dictionary with words
+	init = function() {
+		shuffleArray(dictionary);
+		for (var i = 0; i < dictionary.length; i++) {
+			document.getElementById('word_list').innerHTML += "<li onclick='show(" + i + ")'>" + dictionary[i].word + "</li>";
+		}			
+	}
+
+	//call init on page load
+	init();
+
+	//display a word, its definition and related words
+	//clicking related words will load the corresponding search results	
+	show = function(i){
+		document.getElementById('word_text').innerHTML = dictionary[i].word;
+		document.getElementById('definition').innerHTML = dictionary[i].def;
+		var exampleCheck = document.getElementById('example').innerHTML = "<i>" + dictionary[i].example + "</i>";
+		var relatedCheck = document.getElementById('related').innerHTML = "";
+		if (exampleCheck != "<i></i>") {
+		document.getElementById('exampleTitle').innerHTML = "예문";
+		}
+		else {
+		document.getElementById('exampleTitle').innerHTML = "";
+		}
+		document.getElementById('relatedTitle').innerHTML = "관련 단어";		
+
+		var list = "";
+		var listSearch = "";
+
+		for (var j = 0; j < dictionary[i].rel.length; j++) {
+			list = dictionary[i].rel[j];
+			for (var k = 0; k < dictionary.length; k++) {
+				if (list == dictionary[k].word) {
+					listSearch = "<li onclick='show(" + k + ")'>" + list + "</li>";
+					break;
+				}
+				else
+				{
+					listSearch = "<li>" + list + "</li>";
+				}
+			}
+			document.getElementById('related').innerHTML += listSearch;
+		}
+	}
+
+	ranShow = function(){
+		var randomWord = Math.floor(Math.random()*dictionary.length);
+		show(randomWord);
+	}
+
+	//show first word in the dictionary when page loads = show(0)
+	show(0);
+
+	//search function
+	search = function(){
+		query = document.getElementById('search').value;
+
+		if (query == "") {
+			return;
+		}
+		lcquery = query.replace(/[^a-zA-Z0-9]/g,'').toLowerCase();
+		found = -1; //search found false result
+
+		for (var i = 0; i < dictionary.length; i++) {
+			if (lcquery == dictionary[i].word.replace(/[^a-zA-Z0-9]/g,'').toLowerCase()) {
+				found = i;
+				break;
+			}
+			else {
+				document.getElementById('word_text').innerHTML = "검색결과가 없습니다";
+				document.getElementById('definition').innerHTML = "입력한 단어를 찾을 수 없습니다";
+				document.getElementById('exampleTitle').innerHTML = "";
+				document.getElementById('relatedTitle').innerHTML = "";
+				document.getElementById('related').innerHTML = "";
+			}
+		}
+
+		if (found >= 0) {
+			show(found);
+		}
+	}
+
+</script>
