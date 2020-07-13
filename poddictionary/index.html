@@ -198,7 +198,7 @@
 							word: "N _ O _",
 							def: "Need - 구하는 아이템<br>Offer - 지불할 아이템",
 							example: "N 3x3 O ohm<br>키세트 3x3을 옴룬으로 삽니다",
-							rel: ["_ 4 _", "_ for _"] 
+							rel: ["_ 4 _", "_ for _", "N", "O"] 
 						},
 						{
 							word: "_ 4 _",
@@ -557,7 +557,7 @@
 						},
 						{
 							word: "3x3",
-							def: "증오, 파괴, 공포키 세트 (1x3)<br>3세트는 3x3",
+							def: "[아이템] 증오, 파괴, 공포키 세트 (1x3)<br>3세트는 3x3",
 							example: "N 3x3 O 0.75<br>키 3x3을 0.75HR로 삽니다",
 							rel: ["TKey", "HKey", "DKey"] 
 						},
@@ -575,43 +575,43 @@
 						},
 						{
 							word: "TKey",
-							def: "Key of Terror<br>공포키(카운테스)",
+							def: "[아이템] Key of Terror<br>공포키(카운테스)",
 							example: "",
 							rel: ["HKey", "DKey"] 
 						},
 						{
 							word: "HKey",
-							def: "Key of Hate<br>증오키(소환술사)",
+							def: "[아이템] Key of Hate<br>증오키(소환술사)",
 							example: "",
 							rel: ["TKey", "DKey"] 
 						},
 						{
 							word: "DKey",
-							def: "Key of Destruction<br>파괴키(니라트하크)",
+							def: "[아이템] Key of Destruction<br>파괴키(니라트하크)",
 							example: "",
 							rel: ["TKey", "HKey"] 
 						},
 						{
 							word: "token",
-							def: "Token of Absolution<br>면죄의 징표(스탯 초기화)",
+							def: "[아이템] Token of Absolution<br>면죄의 징표(스탯 초기화)",
 							example: "",
 							rel: ["HKey", "DKey"] 
 						},
 						{
 							word: "GC",
-							def: "Grand Charm<br>그랜드 참",
+							def: "[아이템] Grand Charm<br>그랜드 참",
 							example: "I need 2 more fire gcs<br>파이어 스킬참 2개 더 필요하다",
 							rel: ["SC"] 
 						},
 						{
 							word: "SC",
-							def: "Small Charm<br>스몰 참",
+							def: "[아이템] Small Charm<br>스몰 참",
 							example: "",
 							rel: ["GC"] 
 						},
 						{
 							word: "skiller",
-							def: "스킬 참",
+							def: "[아이템] 스킬 참",
 							example: "pcomb skiller(pcomb gc)<br>팔라 전투참",
 							rel: ["GC"] 
 						},
@@ -671,34 +671,220 @@
 						},
 						{
 							word: "EBotD",
-							def: "에테리얼 죽음의 숨결",
+							def: "[아이템] 에테리얼 죽음의 숨결",
 							example: "ebotd cb/wp/ba<br>에테죽숨 콜블/워파이크/버석",
 							rel: ["BotD"] 
 						},
-						
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+						{
+							word: "HotO",
+							def: "Heart of the Oak<br>[룬워드] 오크의 심장",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "Fort",
+							def: "Fortitude<br>[룬워드] 인내",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "CoH",
+							def: "Chains of Honor<br>[룬워드] 명예의 굴레",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "CtA",
+							def: "Call to Arms<br>[룬워드] 소집 명령",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "LS",
+							def: "LightSabre<br>[아이템] 광검",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "Tal Ammy",
+							def: "Tal Rasha's Adjudication<br>[아이템] 탈 라샤의 판결",
+							example: "",
+							rel: ["Ammy"] 
+						},
+						{
+							word: "Ammy",
+							def: "Amulet<br>[아이템] 아뮬렛",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "GFace",
+							def: "Guillaume's Face<br>[아이템] 길리엄의 얼굴",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "Andy's",
+							def: "Andariel's Visage<br>[아이템] 안다리엘의 두개골",
+							example: "3os andys<br>3솟 안다뚜껑",
+							rel: [] 
+						},
+						{
+							word: "Andy",
+							def: "1. Andariel<br>[보스] 안다리엘<br>2. Andariel's Visage<br>[아이템] 안다리엘의 두개골",
+							example: "",
+							rel: ["Andy's"] 
+						},
+						{
+							word: "Drac's",
+							def: "Dracul's Grasp<br>[아이템] 드라큘의 손아귀",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "Dungo",
+							def: "Verdungo's Hearty Cord<br>[아이템] 베르던고의 든든한 끈",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "SoE",
+							def: "String of Ears<br>[아이템] 귀꿰미",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "TGod",
+							def: "Thundergod's Vigor<br>[아이템] 천둥신의 박력",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "Occu",
+							def: "The Oculus<br>[아이템] 망울",
+							example: "",
+							rel: ["Occy"] 
+						},
+						{
+							word: "Occy",
+							def: "The Oculus<br>[아이템] 망울",
+							example: "",
+							rel: ["Occu"] 
+						},
+						{
+							word: "DW",
+							def: "Death's Web<br>[아이템] 죽음의 거미줄",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "HoZ",
+							def: "Herald of Zakarum<br>[아이템] 자카룸의 전령",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "HoJ",
+							def: "Hands of Justice<br>[룬워드] 정의의 손길",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "CB",
+							def: "Charged Bolt<br>[스킬] 차지드 볼트",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "ES",
+							def: "Energy Shield<br>[스킬] 에너지 실드",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "WW",
+							def: "Whirlwind<br>[스킬] 훨윈드",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "BO",
+							def: "Battle Orders<br>[스킬] 배틀 오더",
+							example: "BO pls<br>오더좀요",
+							rel: [] 
+						},
+						{
+							word: "FoH",
+							def: "Fist of the Heaven<br>[스킬] 피스트 오브 더 헤븐",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "BoI",
+							def: "Blades of Ice<br>[스킬] 블레이드 오브 아이스",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "BoS",
+							def: "Burst of Speed<br>[스킬] 버스트 오브 스피드",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "BS",
+							def: "Blade Shield<br>[스킬] 블레이드 실드",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "CE",
+							def: "Corpse Explosion<br>[스킬] 커프스 익스플로젼",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "mule",
+							def: "1. 아이템을 옮기다<br>2. 창고 캐릭터",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "offer",
+							def: "제시",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "CE",
+							def: "Corpse Explosion<br>[스킬] 커프스 익스플로젼",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "WTB",
+							def: "Wanted to Buy<br>삽니다",
+							example: "WTB clean SoJ<br>조던 클린 삽니다",
+							rel: ["N", "LF"] 
+						},
+						{
+							word: "LF",
+							def: "Looking For<br>찾습니다",
+							example: "LF clean SoJ<br>조던 클린 찾습니다",
+							rel: ["N", "WTB"] 
+						},
+						{
+							word: "N",
+							def: "Need<br>삽니다",
+							example: "N clean SoJ O 2.5hrs<br>클린 조던 2.5hr에 삽니다",
+							rel: ["O", "N _ O _"] 
+						},
+						{
+							word: "O",
+							def: "Offer<br>제시(지불)합니다",
+							example: "N clean SoJ O 2.5hrs<br>클린 조던 2.5hr에 삽니다",
+							rel: ["O", "N _ O _"] 
+						},
 
 
 	];
