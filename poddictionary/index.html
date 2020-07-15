@@ -160,9 +160,9 @@
 						},
 						{
 							word: "HF",
-							def: "Have Fun<br>즐겜",
+							def: "1. Have Fun<br>즐겜<br>2. Holy Fire<br>홀리 파이어",
 							example: "",
-							rel: ["GL"] 
+							rel: ["GL", "HS"] 
 						},
 						{
 							word: "SS",
@@ -511,7 +511,7 @@
 							word: "CtC",
 							def: "Chance to Cast<br>공격/타격시 일정 확률로 발동하는 스킬, 그런 스킬을 사용하는 빌드",
 							example: "lawbringer has decrep ctc<br>법률집행인에는 디크리피파이 타격시 시전이 달렸다",
-							rel: [] 
+							rel: ["proc"] 
 						},
 						{
 							word: "FI",
@@ -712,16 +712,10 @@
 							rel: [] 
 						},
 						{
-							word: "tal ammy",
-							def: "Tal Rasha's Adjudication<br>[아이템] 탈 라샤의 판결",
-							example: "",
-							rel: ["Ammy"] 
-						},
-						{
 							word: "ammy",
 							def: "Amulet<br>[아이템] 아뮬렛",
-							example: "",
-							rel: [] 
+							example: "tals ammy<br>탈아뮬",
+							rel: ["amu"] 
 						},
 						{
 							word: "GFace",
@@ -858,12 +852,6 @@
 						{
 							word: "offer",
 							def: "제시",
-							example: "",
-							rel: [] 
-						},
-						{
-							word: "CE",
-							def: "Corpse Explosion<br>[스킬] 커프스 익스플로젼",
 							example: "",
 							rel: [] 
 						},
@@ -1161,7 +1149,210 @@
 							example: "",
 							rel: ["MPK"] 
 						},
-
+						{
+							word: "merc",
+							def: "Mercenary<br>용병",
+							example: "",
+							rel: ["char"] 
+						},
+						{
+							word: "char",
+							def: "Character<br>캐릭터, 플레이어 본체",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "trav",
+							def: "Travincal<br>트라빈컬<br>war travs는 다른 뜻",
+							example: "",
+							rel: ["LK"] 
+						},
+						{
+							word: "LK",
+							def: "Lower Kurast<br>로워 쿠라스트",
+							example: "",
+							rel: ["trav"] 
+						},
+						{
+							word: "war travs",
+							def: "War Traveler<br>[아이템] 전장의 여행자",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "amu",
+							def: "Amulet<br>[아이템] 아뮬렛",
+							example: "tals amu<br>탈아뮬",
+							rel: ["ammy"] 
+						},
+						{
+							word: "tal's",
+							def: "Tal Rasha's<br>탈 라샤 셋",
+							example: "tals sorc<br>탈셋 소서",
+							rel: ["tal"] 
+						},
+						{
+							word: "tal",
+							def: "1. 탈 룬<br>2. Tal Rasha's<br>탈 라샤 셋",
+							example: "tals sorc<br>탈셋 소서",
+							rel: ["tals"] 
+						},
+						{
+							word: "HS",
+							def: "Holy Shock<br>홀리 쇼크",
+							example: "",
+							rel: ["HF"] 
+						},
+						{
+							word: "lvl",
+							def: "Level<br>레벨",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "rush",
+							def: "버스",
+							example: "norm rush<br>노말 버스",
+							rel: [] 
+						},
+						{
+							word: "NG",
+							def: "Next Game<br>다음 방",
+							example: "ng after reset<br>리셋 끝나고 다음방",
+							rel: [] 
+						},
+						{
+							word: "rush",
+							def: "버스",
+							example: "norm rush<br>노말 버스",
+							rel: [] 
+						},
+						{
+							word: "trist",
+							def: "Tristram<br>트리스트럼",
+							example: "trist run<br>트리런<br>uber trist<br>우버 트리스트럼",
+							rel: [] 
+						},
+						{
+							word: "OFC",
+							def: "Of Course<br>당연히",
+							example: "ofc you tele stomp for maximum dmg<br>데미지 극대화하려면 당연히 머리찍기 해야죠",
+							rel: [] 
+						},
+						{
+							word: "LOL",
+							def: "Laugh Out Loud<br>ㅋㅋㅋ",
+							example: "",
+							rel: ["LMAO"] 
+						},
+						{
+							word: "LMAO",
+							def: "Laugh My Ass Off<br>ㅋㅋㅋ",
+							example: "",
+							rel: ["LOL"] 
+						},
+						{
+							word: "LUL",
+							def: "Lame Uncomfortable Laugh<br>ㅋㅋ;",
+							example: "",
+							rel: ["LOL", "lel"] 
+						},
+						{
+							word: "tele",
+							def: "Teleport<br>텔레포트",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "pot",
+							def: "Potion<br>포션",
+							example: "I'm tired of chugging pots<br>포션 먹방하기 지친다",
+							rel: [] 
+						},
+						{
+							word: "w/",
+							def: "With",
+							example: "Bow sorc w doomslinger is actually good<br>둠슬링어 낀 활소서는 실제로 좋다",
+							rel: ["w/o"] 
+						},
+						{
+							word: "w/o",
+							def: "Without",
+							example: "java w/o infinity viable?<br>인피없이 자벨마 가능?",
+							rel: ["w/"] 
+						},
+						{
+							word: "w/e",
+							def: "Whatever",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "THX",
+							def: "Thanks",
+							example: "",
+							rel: ["TY", "THNX"] 
+						},
+						{
+							word: "THNX",
+							def: "Thanks",
+							example: "",
+							rel: ["TY", "THX"] 
+						},
+						{
+							word: "unid",
+							def: "Unidentified<br>미확인",
+							example: "unid anni<br>미확 애니",
+							rel: [] 
+						},
+						{
+							word: "obv",
+							def: "Obviously<br>확실히",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "proc",
+							def: "조건에 따라 발동하다, 묻다",
+							example: "amp proc bow<br>앰플활",
+							rel: ["CtC"] 
+						},
+						{
+							word: "amp",
+							def: "Amplify Damage<br>[스킬] 앰플리파이 데미지",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "decrep",
+							def: "Decrepify<br>[스킬] 디크리피파이",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "hemo",
+							def: "Hemorrhage<br>[스킬] 혈사병",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "pref",
+							def: "Preference<br>선호",
+							example: "any pref gs?<br>선호하는 서버 있음?",
+							rel: [] 
+						},
+						{
+							word: "comp",
+							def: "1. Computer<br>컴퓨터<br>2. Composition<br>조합",
+							example: "",
+							rel: [] 
+						},
+						{
+							word: "NGL",
+							def: "Not Gonna Lie<br>리얼로",
+							example: "",
+							rel: [] 
+						},
 
 
 
