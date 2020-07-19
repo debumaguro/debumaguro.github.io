@@ -61,6 +61,7 @@
 </body>
 </html>
 <script type="text/javascript">
+	//-- Lazy asf array --//
 	var dictionary = [
 						{
 							word: "OoC",
@@ -1033,19 +1034,31 @@
 							word: "javazon",
 							def: "자벨린 아마존",
 							example: "",
-							rel: ["java"] 
+							rel: ["java", "jav"] 
 						},
 						{
 							word: "java",
 							def: "javazon 참고",
 							example: "",
-							rel: ["javazon"] 
+							rel: ["javazon", "jav"] 
+						},
+						{
+							word: "jav",
+							def: "javazon 참고",
+							example: "",
+							rel: ["javazon", "java"] 
 						},
 						{
 							word: "HLord",
 							def: "Highlord's Wrath<br>[아이템] 고위사제의 진노",
 							example: "",
 							rel: ["highlords"] 
+						},
+						{
+							word: "LR",
+							def: "Lower Resist<br>[스킬] 로워 레지스트",
+							example: "",
+							rel: [] 
 						},
 						{
 							word: "hype",
@@ -1346,6 +1359,24 @@
 							def: "1. Computer<br>컴퓨터<br>2. Composition<br>조합",
 							example: "",
 							rel: [] 
+						},
+						{
+							word: "gz",
+							def: "Congratulations<br>ㅊㅊ",
+							example: "",
+							rel: ["gratz", "grats"] 
+						},
+						{
+							word: "gratz",
+							def: "Congratulations<br>ㅊㅊ",
+							example: "",
+							rel: ["gz", "grats"] 
+						},
+						{
+							word: "grats",
+							def: "Congratulations<br>ㅊㅊ",
+							example: "",
+							rel: ["gz", "gratz"] 
 						},
 						{
 							word: "NGL",
