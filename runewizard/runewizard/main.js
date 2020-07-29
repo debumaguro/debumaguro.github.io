@@ -296,7 +296,7 @@ var App =
 				}
 
 				// description layer id
-        _sLayerId=runeword.title.replace(/<br>([\s\S]+)<\/br>/g,'');
+        		_sLayerId=runeword.title.replace(/<br>([\s\S]+)<\/br>/g,'');
 				sLayerId=_sLayerId.replace(/[^a-zA-Z0-9]/g,'_');
 				/* Detect missing div
 				if (!$(sLayerId)) {
