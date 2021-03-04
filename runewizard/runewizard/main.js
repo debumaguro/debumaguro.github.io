@@ -93,7 +93,7 @@ var Runewords = [
   {title:"Pride<br>자존심</br>",runes:['Cham','Sur','Io','Lo'],ttype:"창/폴암",ladder:true},
   {title:"Rift<br>균열</br>",runes:['Hel','Ko','Lem','Gul'],ttype:"창/폴암/셉터",ladder:true},
   {title:"Spirit<br>영혼</br>",runes:['Tal','Thul','Ort','Amn'],ttype:"검/방패",ladder:true},
-  {title:"Voice of Reason<br>이성적인 항변</br>",runes:['Lem','Ko','El','Eld'],ttype:"검/메이스",ladder:true},
+  {title:"Voice of Reason<br>이성의 항변자</br>",runes:['Lem','Ko','El','Eld'],ttype:"검/메이스",ladder:true},
   {title:"Wrath<br>진노</br>",runes:['Pul','Lum','Ber','Mal'],ttype:"원거리 무기",ladder:true},
 	/* POD LADDER */
   {title:"Pattern<br>패턴</br>",runes:['Tal','Ort','Tir'],ttype:"클러",ladder:true},
